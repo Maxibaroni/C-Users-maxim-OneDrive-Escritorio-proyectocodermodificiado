@@ -1,0 +1,210 @@
+.{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bevan', cursive;color: white;
+    
+    background-repeat: no-repeat;
+    
+    background-color: black;
+
+    }
+    .grid_container{
+        display: grid;
+        grid-template-areas: 
+        "logo logo logo logo"
+        "nav nav nav nav"
+        " main main main main"
+        "section1 section1 section1 section1"
+        "section2 section2 section2 section2"
+        "section3 section3 section3 section3"
+        "section4 section4 section4 section4"
+        "footer footer footer footer ";
+        grid-template-rows: 1fr 1fr;
+    }
+.logo{
+    grid-area: logo;
+    width: 250px;
+}
+.redes{
+  
+    display: flex;
+    justify-content: end;
+   
+}
+.fa-facebook-square {
+  
+    color: rgb(236, 247, 247);
+}
+.container_menu{
+    grid-area: nav;
+}
+ul{
+
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    
+   
+    
+}
+li{
+    
+    list-style: none;
+    text-decoration: none;
+   
+}
+li :hover{
+    color: yellow;
+}
+
+.main-section{
+    grid-area: main;
+    width: 100%;
+    background-image: url(https://fondosmil.com/fondo/18767.jpg);
+  
+}
+.section1{
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+    
+}
+
+.section2{
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+    background-color: pink;
+}
+.section3{
+    grid-area: section3;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.section4{
+    grid-area: section4;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+footer{
+    grid-area: footer;
+    background-color: chartreuse;
+}
+.datos{
+    background-color: crimson;
+}
+.ubicacion{
+    display: flex;
+    justify-content: end;
+   
+    background-color: tomato;
+}
+.mapa{
+    width: 150px;
+    height: 150px;
+}
+@media  (min-width: 768px);{
+    body{
+        font-size: 15px;
+    }
+    .grid_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media  (min-width: 992px);{
+    body{
+        font-size: 16px;
+    }
+    .grid_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media  (min-width: 1200px);{
+    body{
+        font-size: 17px;
+    }
+    .grid_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: section5;
+    background-color: blue;
+    border: 5px solid white;
+}
+
+.section6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: section6;
+    background-color: blue;
+    border: 5px solid white;
+}
+.grid_container1{
+    
+        display: grid;
+        grid-template-areas: 
+        "logo logo logo logo"
+        "nav nav nav nav"
+        " main main main main"
+        "section1 section1 section1 section1"
+        "section5 section5 section5 section5"
+        "section6 section6 section6 section6"
+        "footer footer footer footer ";
+        grid-template-rows: 1fr 1fr;
+      
+}
+@media  (min-width: 768px);{
+    body{
+        font-size: 15px;
+    }
+    .grid_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media  (min-width: 992px);{
+    body{
+        font-size: 16px;
+    }
+    .grid_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media  (min-width: 1200px);{
+    body{
+        font-size: 17px;
+    }
+    .grid_container{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
